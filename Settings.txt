@@ -5,4 +5,6 @@
 heading-color: #F2921D;
 paragraph-color: #5C5C5C;
 
+icons-color: #707070;
+
 footer-background: #707070;
