@@ -136,6 +136,14 @@ a#nav-link:hover {
     font-size: 1.5vw;
 }
 
+a#nav-link:active {
+    color: white;
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+}
+
 
 /*//////////// Dropdown Menu Items ////////////*/
 
@@ -147,15 +155,27 @@ a#nav-link:hover {
 }
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+.dropdown-content1 {
     display: none;
     position: absolute;
     background-color: white;
-    width: 10vw;
+    width: 12vw;
     z-index: 1;
     align-content: center;
     align-items: center;
     justify-content: center;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 12vw;
+    z-index: 1;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vw;
 }
 
 a#nav-link2,
@@ -166,16 +186,25 @@ a#nav-link2:hover {
     font-style: normal;
     font-size: 1.05vw;
     display: block;
-    padding: 2vh;
+    padding: 1vh;
+    text-align: left;
 }
 
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content1 a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content2 a:hover {
     background-color: #ddd;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content1 {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content2 {
     display: block;
 }
