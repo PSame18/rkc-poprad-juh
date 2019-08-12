@@ -29,3 +29,19 @@ body {
 
 
 /*//////////// Home Header ////////////*/
+
+header {
+    color: white;
+}
+
+div#background-div {
+    position: relative;
+    z-index: -1;
+}
+
+img#background-image {
+    position: absolute;
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
