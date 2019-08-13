@@ -5,81 +5,138 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
+    <link rel="stylesheet" href="public/CSS/index.css">
     <link rel="stylesheet" href="public/CSS/kontakt.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/uzj7jng.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
 
-    <!-- TODO: Header from Patrik -->
     <header>
+        <div id="background-header">
+            <img id="background-image" alt="Home Background" src="public/Images/church-picture.png">
+        </div>
 
+        <div id="info-header">
+            <div id="logo-header">
+                <img id="logo" alt="Logo" src="public/Images/logo-white.png">
+            </div>
+
+            <div id="text-header">
+                <h1>
+                    <section id="rimsko">Rímskokatolícka</section>
+                    <section id="farnost"> farnosť</section>
+                    <section id="pp-juh">Poprad - Juh</section>
+                </h1>
+            </div>
+        </div>
+
+        <nav>
+            <div id="menu-header">
+                <ul id="nav-header">
+                    <li><a id="active" href="index.html">Domov</a></li>
+                    <li><a id="nav-link" href="aktuality.html">Aktuality</a></li>
+                    <li><a id="nav-link" href="svata-omsa-spoved.html">Svätá omša<br>Svätá spoveď</a></li>
+                    <li><a id="nav-link" href="oznamy.html">Oznamy</a></li>
+                    <li class="dropdown"><a id="nav-link">Sviatosti<br>Sväteniny</a>
+                        <div class="dropdown-content1">
+                            <a id="nav-link2" href="krst.html">Krst</a>
+                            <a id="nav-link2" href="sviatost-zmierenia.html">Sviatosť zmierenia</a>
+                            <a id="nav-link2" href="1-sv-prijimanie.html">1. Sväté prijímanie</a>
+                            <a id="nav-link2" href="birmovanie.html">Birmovanie</a>
+                            <a id="nav-link2" href="sviatost-manzelstva.html">Sviatosť manželstva</a>
+                            <a id="nav-link2" href="pomazanie-chorych.html">Pomazanie chorých</a>
+                            <a id="nav-link2" href="krestansky-pohreb.html">Kresťanský pohreb</a>
+                            <a id="nav-link2" href="iniciacne-sviatosti-dospelych.html">Iniciačné sviatosti dospelých</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a id="nav-link">Farnosť</a>
+                        <div class="dropdown-content2">
+                            <a id="nav-link2" href="kontakt.html">Kontakt</a>
+                            <a id="nav-link2" href="kancelaria.html">Kancelária</a>
+                            <a id="nav-link2" href="kalendar-akcii.html">Kalendár akcií</a>
+                            <a id="nav-link2" href="fotogaleria.html">Fotogaléria</a>
+                            <a id="nav-link2" href="o-farnosti.html">O farnosti</a>
+                            <a id="nav-link2" href="kostoly-kaplnky.html">Kostoly a kaplnky</a>
+                            <a id="nav-link2" href="knazi-vo-farnosti.html">Kňazi vo farnosti</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
 
-        <!-- TODO: HEADING IN ORANGE FRAME -->
-        <div class="main-heading">
-            <h2>KONTAKT</h2>
-        </div>
+        <div class="main">
 
-        <div class="main-content">
-
-            <div class="adress">
-                <h3>ADRESA</h3>
-                <p><b>Rímskokatolícka cirkev, farnosť Poprad - Juh</b></p>
-                <p>Námestie sv.Cyrila a sv.Metoda 4388/59</p>
-                <p>05801 Poprad</p>
+            <div class="main-heading">
+                <h2>KONTAKT</h2>
             </div>
 
-            <div class="contact-info">
-                <h3>KONTAKTNÉ ÚDAJE</h3>
-                <div class="i-div contact-info">
-                    <div class="phone">
-                        <i class="fas fa-phone"></i>
-                        <p>0950 277 199</p>
-                    </div>
+            <div class="main-content">
 
-                    <div class="i-div email">
-                        <i class="far fa-envelope"></i>
-                        <div class="emails">
-                            <p>farnost@rkcpopradjuh.sk</p>
-                            <p>rkcpopradjuh@gmail.com</p>
+                <div class="adress">
+                    <h3>ADRESA</h3>
+                    <p><b>Rímskokatolícka cirkev, farnosť Poprad - Juh</b></p>
+                    <p>Námestie sv.Cyrila a sv.Metoda 4388/59</p>
+                    <p>05801 Poprad</p>
+                </div>
+
+                <div class="contact-info">
+                    <h3>KONTAKTNÉ ÚDAJE</h3>
+                    <div class="i-div contact-info">
+                        <div class="phone">
+                            <i class="fas fa-phone"></i>
+                            <p>0950 277 199</p>
+                        </div>
+
+                        <div class="i-div email">
+                            <i class="far fa-envelope"></i>
+                            <div class="emails">
+                                <p>farnost@rkcpopradjuh.sk</p>
+                                <p>rkcpopradjuh@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="i-div facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <p><a href="#">Rímskokatolícka farnosť Poprad Juh</a></p>
                         </div>
                     </div>
-
-                    <div class="i-div facebook">
-                        <i class="fab fa-facebook-f"></i>
-                        <p><a href="#">Rímskokatolícka farnosť Poprad Juh</a></p>
-                    </div>
                 </div>
-            </div>
 
-            <div class="bank-info">
-                <h3>BANKOVÉ ÚDAJE</h3>
-                <p>Bankové spojenie: VÚB, a.s., pobočka Poprad</p>
-                <p>Názov účtu: Rímskokatolícka cirkev, farnosť Poprad – Juh</p>
-                <p>Číslo účtu IBAN: SK22 0200 0000 0039 8547 3956</p>
-                <br>
-                <p><b>Dary na stavbu novej fary a opravy kostola</b></p>
-                <p>Číslo účtu IBAN: SK90 0200 0000 0041 1263 2457</p>
-            </div>
+                <div class="bank-info">
+                    <h3>BANKOVÉ ÚDAJE</h3>
+                    <p>Bankové spojenie: VÚB, a.s., pobočka Poprad</p>
+                    <p>Názov účtu: Rímskokatolícka cirkev, farnosť Poprad – Juh</p>
+                    <p>Číslo účtu IBAN: SK22 0200 0000 0039 8547 3956</p>
+                    <br class="br">
+                    <p><b>Dary na stavbu novej fary a opravy kostola</b></p>
+                    <p>Číslo účtu IBAN: SK90 0200 0000 0041 1263 2457</p>
+                </div>
 
-            <div class="jural-info">
-                <h3>PRÁVNE ÚDAJE</h3>
-                <p><b>Názov právneho subjektu:</b> Rímskokatolícka cirkev, farnosť Poprad – Juh</p>
-                <p><b>Sídlo právneho subjektu:</b> Námestie sv. Cyrila a sv. Metoda 4388/59, 058 01 Poprad</p>
-                <br>
-                <p><b>IČO:</b> 51 844 532</p>
-                <p><b>DIČ:</b> 2120800143</p>
-                <br>
-                <p><b>Právna forma:</b> Právnická osoba – Cirkevná organizácia (721)</p>
-                <p><b>SK NACE:</b> 94.91.0 Činnosti cirkevných organizácií</p>
-                <p><b>Registrácia:</b> Ministerstvo kultúry SR, cirkevný odbor</p>
-                <p><b>Register:</b> Štatistický úrad SR, register organizácií</p>
+                <div class="jural-info">
+                    <h3>PRÁVNE ÚDAJE</h3>
+                    <p><b>Názov právneho subjektu:</b> Rímskokatolícka cirkev, farnosť Poprad – Juh</p>
+                    <p><b>Sídlo právneho subjektu:</b> Námestie sv. Cyrila a sv. Metoda 4388/59, 058 01 Poprad</p>
+                    <br class="br">
+                    <p><b>IČO:</b> 51 844 532</p>
+                    <p><b>DIČ:</b> 2120800143</p>
+                    <br class="br">
+                    <p><b>Právna forma:</b> Právnická osoba – Cirkevná organizácia (721)</p>
+                    <p><b>SK NACE:</b> 94.91.0 Činnosti cirkevných organizácií</p>
+                    <p><b>Registrácia:</b> Ministerstvo kultúry SR, cirkevný odbor</p>
+                    <p><b>Register:</b> Štatistický úrad SR, register organizácií</p>
+                </div>
+
             </div>
 
         </div>
@@ -89,7 +146,50 @@
     <!-- TODO: Footer from Patrik -->
     <footer>
 
+
+        <div class="container-fluid footer">
+
+            <div class="row">
+
+                <div class="col footer-col">
+                    <p>Rímskokatolícka farnosť</p>
+                    <p>sv.Cyrila a Metoda</p>
+                    <p>Poprad - Juh</p>
+                </div>
+
+                <div class="col footer-col">
+                    <p><b>Linky</b></p>
+                    <p>Liturgické čítania</p>
+                    <p>Farnosť Poprad - mesto</p>
+                    <p>Cirkevná spojená škola</p>
+                    <p>Kapitula</p>
+                </div>
+
+                <div class="col footer-col">
+                    <br>
+                    <p>KBS</p>
+                    <p>Modlitba.sk</p>
+                    <p>Sväté písmo</p>
+                    <p>Životopisy svätých</p>
+                </div>
+
+                <div class="col footer-col">
+                    <p><b>Kontakt</b></p>
+                    <i class="far fa-envelope first-i"></i>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+
+            </div>
+
+        </div>
+
     </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="public/JavaScript/javascript.js"></script>
 </body>
