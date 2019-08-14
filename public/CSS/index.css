@@ -214,3 +214,24 @@ a#nav-link2:hover {
 .dropdown:hover .dropdown-content2 {
     display: block;
 }
+
+
+/*//////////// Home Main ////////////*/
+
+main#home-main {
+    position: relative;
+    top: 55vh;
+}
+
+div#shortcut-kancelaria {
+    float: left;
+    left: 20%;
+}
+
+a#shortcut-link,
+a#shortcut-link:hover,
+a#shortcut-link:active {
+    color: #F2921D;
+    font-family: 'Trajan-Pro-3', serif;
+    font-size: 2.3vw;
+}
