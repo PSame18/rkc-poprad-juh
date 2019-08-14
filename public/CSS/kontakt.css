@@ -37,7 +37,7 @@ h2{
     text-align: center;
     background-color: #F2921D;
     color: #FFFFFF;
-    font-size: 70px;
+    font-size: 55px;
     font-weight: 400;
     padding: 30px 0;
     margin-top: 80px;
@@ -45,7 +45,7 @@ h2{
 
 h3{
     color: #F2921D;
-    font-size: 70px;
+    font-size: 55px;
     font-weight: 300;
 }
 
@@ -95,44 +95,29 @@ main{
 }
 
 .main-content{
-    padding: 120px;
+    padding: 40px 80px !important;
+    width: 80%;
+    margin: 0 80px;
 }
 
-.contact-info{
-    margin-top: 80px;
-}
-
-.bank-info{
-    margin-top: 80px;
-}
-
-.jural-info{
-    margin-top: 80px;
-}
-
-.i-div{
-    display: inline;
-    margin: 40px 0;
-}
-
-.i-div i, .i-div p {
-    display: inline-block;
-}
-
-.i-div i{
-    font-size: 100px;
+.main-content i{
+    font-size: 70px;
     color: #707070;
-    width: 180px;
-    justify-content:flex-end;
 }
 
-.emails{
-    display: block;
+.main-content p, .main-content a{
+    font-size: 30px;
+    margin: 0;
+    line-height: 1.2;
 }
 
-.emails p{
-    display: block;
-    margin: 5px 0;
+.part{
+    margin: 30px 0;
+}
+
+.align > :last-child{
+    position: absolute;
+    bottom: 0;
 }
 
 /* ////////////////////////// FOOTER ///////////////////////// */
