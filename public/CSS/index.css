@@ -41,6 +41,13 @@ header {
     color: white;
 }
 
+header#home-header {
+    background-image: url(../Images/church-picture.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
 div#background-header {
     position: relative;
     z-index: -1;
@@ -219,13 +226,7 @@ a#nav-link2:hover {
 /*//////////// Home Main ////////////*/
 
 main#home-main {
-    position: relative;
-    top: 55vh;
-}
-
-div#shortcut-kancelaria {
-    float: left;
-    left: 20%;
+    margin: 3vw auto;
 }
 
 a#shortcut-link,
@@ -233,5 +234,61 @@ a#shortcut-link:hover,
 a#shortcut-link:active {
     color: #F2921D;
     font-family: 'Trajan-Pro-3', serif;
-    font-size: 2.3vw;
+    font-size: 2vw;
+}
+
+a#shortcut-link2,
+a#shortcut-link2:hover,
+a#shortcut-link2:active {
+    color: white;
+    font-family: 'Trajan-Pro-3', serif;
+    font-size: 2vw;
+}
+
+div#shortcut-kancelaria {
+    width: 25vw;
+    border: solid 0.2vw #F2921D;
+    text-align: center;
+    padding: 2vh;
+    margin-right: 2vw;
+}
+
+div#shortcut-birmovka {
+    width: 25vw;
+    border: solid 0.2vw #F2921D;
+    text-align: center;
+    padding: 2vh;
+    background-color: #F2921D;
+    margin-left: 2vw;
+}
+
+div#shortcuts-first-line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div#quotation {
+    width: 54vw;
+    border: solid 0.2vw #F2921D;
+    text-align: center;
+    padding: 2vh;
+    background-color: #F2921D;
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: 3vw;
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-size: 1.5vw;
+}
+
+section#quotation-text {
+    font-weight: 400;
+    text-align: center;
+    padding: 2vw;
+}
+
+section#quotation-source {
+    font-weight: 700;
 }
