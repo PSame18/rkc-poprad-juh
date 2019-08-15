@@ -357,3 +357,8 @@ img#facebook-shortcut,
 img#e-mail-shortcut {
     height: 2vw;
 }
+
+.footer-part{
+    width: 60%;
+    margin: 0 auto;
+}
