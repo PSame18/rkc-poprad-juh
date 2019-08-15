@@ -144,7 +144,8 @@ a#nav-link {
 }
 
 a#nav-link:active,
-a#nav-link:hover {
+a#nav-link:hover,
+.hovered {
     color: white;
     font-family: 'Raleway', serif;
     font-weight: 400;
