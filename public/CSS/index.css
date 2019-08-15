@@ -292,3 +292,9 @@ section#quotation-text {
 section#quotation-source {
     font-weight: 700;
 }
+
+
+/*//////////// Home Footer ////////////*/
+footer {
+    background-color: #707070;
+}
