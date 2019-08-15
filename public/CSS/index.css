@@ -135,8 +135,7 @@ ul#nav-header {
     text-align: center;
 }
 
-a#nav-link,
-a#nav-link:hover {
+a#nav-link {
     color: white;
     font-family: 'Raleway', serif;
     font-weight: 200;
@@ -144,12 +143,13 @@ a#nav-link:hover {
     font-size: 1.5vw;
 }
 
-a#nav-link:active {
+a#nav-link:active,
+a#nav-link:hover {
     color: white;
     font-family: 'Raleway', serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2vw;
+    font-size: 1.9vw;
 }
 
 a#active {
@@ -157,7 +157,7 @@ a#active {
     font-family: 'Raleway', serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 2vw;
+    font-size: 1.9vw;
 }
 
 /*//////////// Dropdown Menu Items ////////////*/
