@@ -1,0 +1,211 @@
+.container-fluid.main{
+  position: relative; /* To make the navbar positions relative to this container */
+  padding: 0;
+}
+
+.navbar-default {
+  background-color: hsla(0, 0%, 0%, 0.33);
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 0px;
+  border: 0;
+  box-shadow: none;
+  position: absolute; /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
+  top: 250px;
+  left: 0;
+  right: 0;
+  z-index: 10; /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+#myNavbar{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#myNavbar ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 12vh;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#myNavbar ul li{
+    margin: 0 50px;
+}
+
+a.nav-link {
+    color: white;
+    font-family: 'Raleway', serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5vw;
+}
+
+a.nav-link:active,
+a.nav-link:hover,
+.hovered {
+    color: white;
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9vw;
+}
+
+a.active {
+    color: white;
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9vw;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////// CAROUSEL /////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////// */
+
+.carousel .background {
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+@media (max-width:991px) {
+  .carousel .background {
+    background-size: cover; /* To make the background image looks good */
+  }
+}
+
+.carousel .background.a {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/church-picture.png");
+}
+
+.carousel .background.b {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/church.jpg");
+}
+
+.carousel .background.c {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/book.jpg");
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition: opacity 0.5s; /* The 0.5s describes the duration to make the opacity from 0 to 1 */
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+/* CSS Hack to trigger GPU for smooth transition */
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* CSS Hack to trigger GPU for smooth transition */
+
+div#info-header {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    display: grid;
+    grid-template-areas: "logo-header text-header text-header";
+    grid-column: 0.5fr 4fr;
+    padding: 2vw;
+    color: white;
+}
+
+div#logo-header {
+    grid-area: logo-header;
+}
+
+img#logo {
+    width: 8vw;
+    margin-left: 4vw;
+}
+
+div#text-header {
+    grid-area: text-header;
+    font-family: 'Trajan-Pro-3', serif;
+    font-weight: 200;
+    font-style: normal;
+    position: relative;
+    margin-left: 4vw;
+}
+
+section#rimsko {
+    font-size: 5vw;
+    position: absolute;
+    left: -25vw;
+    top: 1vw;
+}
+
+section#farnost {
+    font-size: 3.25vw;
+    position: absolute;
+    top: 2.75vw;
+    left: 24vw;
+}
+
+section#pp-juh {
+    font-size: 3.25vw;
+    position: absolute;
+    top: 7vw;
+    left: 1vw;
+}
