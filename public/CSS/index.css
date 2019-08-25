@@ -49,18 +49,6 @@ header#home-header {
     height: 90vh;
 }
 
-div#background-header {
-    position: relative;
-    z-index: -1;
-}
-
-img#background-image {
-    position: absolute;
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
-
 /*//////////// Information Header ////////////*/
 
 div#info-header {
@@ -358,7 +346,118 @@ img#e-mail-shortcut {
     height: 2vw;
 }
 
-.footer-part{
+.footer-part {
     width: 60%;
     margin: 0 auto;
+}
+
+
+/*/////////////////////////// MEDIA QUERIES ///////////////////////////*/
+
+
+
+/*/////////////////////////// TABLETS ///////////////////////////*/
+
+@media all and (min-width:720px) and (max-width:1024px) {}
+
+
+
+/*/////////////////////////// PHONES ///////////////////////////*/
+
+@media all and (max-width:720px) {
+
+    /*//////////// Home Header ////////////*/
+
+    header#home-header {
+        height: 90vh;
+    }
+
+    /*//////////// Information Header ////////////*/
+
+    div#info-header {
+        display: grid;
+        grid-template-areas:
+            "logo-header text-header text-header"
+            "logo-header text-header text-header";
+        grid-column: 0.5fr 4fr;
+        padding: 2vw;
+    }
+
+    img#logo {
+        width: 20vw;
+        margin-left: 4vw;
+    }
+
+    section#rimsko {
+        font-size: 7vw;
+        position: absolute;
+        left: -25vw;
+        top: 1vw;
+    }
+
+    section#farnost {
+        font-size: 4.25vw;
+        position: absolute;
+        top: 10vw;
+    }
+
+    section#pp-juh {
+        font-size: 8vw;
+        position: absolute;
+        left: -25vw;
+        top: 15vw;
+    }
+
+    /*//////////// Menu ////////////*/
+
+    div#menu-header {
+        width: 100%;
+        height: 60vh;
+        background-color: hsla(0, 0%, 0%, 0.33);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    ul#nav-header {
+        list-style-type: none;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 50vh;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    a.nav-link {
+        color: white;
+        font-family: 'Raleway', serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 7vw;
+    }
+
+    a.nav-link:active,
+    a.nav-link:hover,
+    .hovered {
+        color: white;
+        font-family: 'Raleway', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 7.9vw;
+    }
+
+    a.active {
+        color: white;
+        font-family: 'Raleway', serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 7.9vw;
+    }
+
 }
