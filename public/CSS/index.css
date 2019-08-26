@@ -354,11 +354,27 @@ img#e-mail-shortcut {
 
 /*/////////////////////////// MEDIA QUERIES ///////////////////////////*/
 
+/*/////////////////////////// DESKTOPTS ///////////////////////////*/
 
+@media all and (min-width:1024px) {
+
+    /*//////////// Menu ////////////*/
+
+    nav#hamburger-menu {
+        display: none;
+    }
+}
 
 /*/////////////////////////// TABLETS ///////////////////////////*/
 
-@media all and (min-width:720px) and (max-width:1024px) {}
+@media all and (min-width:720px) and (max-width:1024px) {
+
+    /*//////////// Menu ////////////*/
+
+    nav#hamburger-menu {
+        display: none;
+    }
+}
 
 
 
@@ -369,7 +385,10 @@ img#e-mail-shortcut {
     /*//////////// Home Header ////////////*/
 
     header#home-header {
-        height: 90vh;
+        background-image: url(../Images/church-picture.png);
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
     }
 
     /*//////////// Information Header ////////////*/
@@ -410,54 +429,48 @@ img#e-mail-shortcut {
 
     /*//////////// Menu ////////////*/
 
-    div#menu-header {
-        width: 100%;
-        height: 60vh;
-        background-color: hsla(0, 0%, 0%, 0.33);
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+    nav#big-menu {
+        display: none;
     }
 
-    ul#nav-header {
+    #hamburger-menu {
+        width: 100%;
+    }
+
+    /* Menu Items */
+    #hamburger-menu ul {
         list-style-type: none;
-        display: flex;
-        flex-flow: column;
-        justify-content: space-around;
         margin: 0;
         padding: 0;
-        width: 100%;
-        height: 50vh;
-        align-content: center;
-        align-items: center;
-        text-align: center;
+        display: none;
     }
 
-    a.nav-link {
-        color: white;
-        font-family: 'Raleway', serif;
-        font-weight: 200;
-        font-style: normal;
-        font-size: 7vw;
+    #hamburger-menu ul li {
+        display: block;
+        padding: 10px;
+        box-sizing: border-box;
+        border-top: 1px solid #333;
     }
 
-    a.nav-link:active,
-    a.nav-link:hover,
-    .hovered {
-        color: white;
-        font-family: 'Raleway', serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 7.9vw;
+    #hamburger-menu ul li a {
+        color: #fff;
+        text-decoration: none;
     }
 
-    a.active {
-        color: white;
-        font-family: 'Raleway', serif;
-        font-weight: 400;
+    #hamburger-menu label {
+        display: inline-block;
+        color: #fff;
         font-style: normal;
-        font-size: 7.9vw;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    #hamburger-menu input:checked ~ ul {
+        display: block;
+    }
+
+    #hamburger {
+        display: none;
     }
 
 }
